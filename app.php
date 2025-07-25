@@ -151,7 +151,7 @@ function apagarReceita($con) {
 }
 function criarCategoria($con) {
     $nome = readline("Nome da categoria: ");
-    $sql = "INSERT INTO categoria (nome_categoria) VALUES ('$nome')";
+    $sql = "INSERT INTO categoria (nome) VALUES ('$nome')";
 
     if (mysqli_query($con, $sql)) {
         echo "Categoria criada com sucesso!\n";
